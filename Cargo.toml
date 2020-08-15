@@ -1,0 +1,20 @@
+[package]
+name = "rs-cosmocli"
+version = "0.1.0"
+authors = ["Simon Gottschlag"]
+edition = "2018"
+
+[dependencies]
+structopt = "0.3.*"
+clap = "3.0.0-beta.1"
+futures = { version = "0.3.*" }
+tokio = {version = "0.2.*", features = ["full"] }
+chrono = "0.4.*"
+log = "0.4.*"
+env_logger = "0.7.*"
+anyhow = "1.0.*"
+azure_sdk_cosmos = "0.100.*"
+
+[dev-dependencies]
+cargo-watch = "^7.5.0"
+cargo-make = "^0.32.1"
